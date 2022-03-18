@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitchway | Funciones</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/funciones.css" />
+    <link rel="stylesheet" href="../lib/css/select.css" />
+    <link rel="stylesheet" href="../lib/css/botonComprar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+  </head>
+  <body>
+    <header>
+      <div id="navigator"></div>
+    </header>
+    <main>
+      <div id="busqueda-peli">
+        <div class="container-fluid">
+          <div class="row mt-5">
+            <div class="col-md-6 text-center">
+              <p class="text-center text-light fw-bold h2">1. Seleccione la pelicula deseada</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <p class="text-center text-light fw-bold h2">2. Seleccione la fecha deseada</p>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-md-6 text-center">
+              <p class="text-center text-light h5">(por defecto = todas las peliculas)</p>
+            </div>
+            <div class="col-md-6 text-center">
+              <p class="text-center text-light h5">(por defecto = dia de hoy)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <div id="movie-selection"></div> <!--Seleccion de pelicula-->
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center">
+              <div id="seccion-datepicker"></div> <!--Seleccion de fecha-->
+            </div>
+          </div>
+          <div class="row justify-content-center border-bottom">
+            <div class="col-md-4 d-flex align-items-center justify-content-center mt-5 mb-4" >
+                <a id="boton-busqueda" href="#">
+                  <div id="boton-buscar-funciones" class="row">
+                      <div class="col-md-12">
+                        <img id="img-lupa" src="../img/search.png" width="100" height="100">
+                      </div>
+                  </div>
+                </a>
+            </div>
+        </div>
+        </div>
+      </div>
+
+      <div id="resultado-busqueda">
+      </div>
+      <div id="resultado-error">
+      </div>
+    </main>
+    <footer id="footer">
+    </footer>
+    <script type="module" src="../js/eventos/buscarFunciones.js"></script>
+    <script type="module" src="../js/inicializadores/funcionesinit.js"></script>
+    <script src="../js/efects/scrollFade.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
+</html>

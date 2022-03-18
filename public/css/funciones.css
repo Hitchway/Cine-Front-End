@@ -1,0 +1,60 @@
+html {
+    height:89%
+} 
+body {
+    min-height:100%;
+    margin-top: 5%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: #080808;
+    background-image: url(../img/rail.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-right: 8%;
+    margin-left: 8%;
+    display: flex;
+    flex-direction: column;
+}
+
+#busqueda-peli{
+    border-bottom:3cm;
+    border-radius: 3px solid black;
+}
+
+h3{
+    color:rgb(200,200,200)
+}
+
+#resultado-error h1, h2 {
+    color: rgb(220, 80, 0);
+    text-shadow: 0px 0px 8px rgba(0,0,0,0.95);
+}
+
+#date-picker{
+    font-size: 25px;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(59, 59, 59);
+    color:rgb(0, 255, 255);
+    border-color: aqua;
+    border-radius: 6px;
+    border-width: 1px;
+}
+
+#boton-busqueda:hover{
+    box-shadow: 2px solid black;
+}
+
+#img-lupa{
+    -webkit-filter: drop-shadow(0px 0px 2px rgb(0, 255, 255) );
+    filter: drop-shadow(0px 0px 2px rgb(0, 255, 255));
+    transform: rotate(-10deg);
+    transition: 0.5s;
+}
+
+#img-lupa:hover {
+    transform: rotate(0deg);
+    -webkit-filter: drop-shadow(0px 0px 12px rgb(0, 255, 255) );
+    filter: drop-shadow(0px 0px 12px rgb(0, 255, 255));
+    transition: 0.5s;
+}

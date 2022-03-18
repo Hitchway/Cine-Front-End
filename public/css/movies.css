@@ -1,0 +1,122 @@
+body {
+    margin-top: 120px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    background-color: #080808;
+    background-image: url(../img/maizal.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-right: 7%;
+    margin-left: 7%;
+}
+
+
+.movie-title h1{
+    font-weight: bold;
+    text-align: end;
+    margin-right: 7%;
+    color: rgb(190, 190, 190);
+    
+}
+.movie-video .video{
+    margin-left: 1%;
+    width: 95%;
+    height: 100%;
+    height: 500px;
+}
+.movie-image img{
+    padding: 7%;
+    width: 100%;
+    height: 100%;
+}
+.trailer-texto h1{
+    margin-left: 3%;
+    font-weight: bold;
+    color:rgb(190, 190, 190)
+}
+.movie-sinopsis h2{
+    margin-left: 3%;
+    font-weight: bold;
+    color:rgb(180, 180, 180)
+}
+.movie-sinopsis h3{
+    margin-left: 3%;
+    color:rgb(170, 170, 170)
+}
+
+.poster{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.poster-imagen{
+    height: 90%;
+}
+.movie-info-box .text{
+    margin-top: 30px;
+    color: #d0ccd1;
+}
+.movie-info-box .video{
+    margin-top: 30px;
+    width: 100%;
+    height: 450px;
+}
+
+@keyframes neonAnim {
+    from {
+        text-shadow:
+          0 0 1px #00dddd,
+          0 0 3px #00dddd,
+          0 0 6px #00dddd;
+      }
+      to {
+        text-shadow:
+          0 0 1px #00dddd,
+          0 0 3px #00dddd,
+          0 0 6px #00dddd;
+      }
+}
+
+.movie-side-info-box{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 20px;
+    margin-left: 20px;
+    border: 1px solid #d0ccd1;
+    float: left;
+    height: 700px;
+    width: 30%
+}
+
+.seccion-comprar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-amarillo {
+    outline: 0;
+    position: relative;
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid #FFFF00;
+    background: #FFFF00;
+    color: #000;
+    font-weight: 600;
+    transition: box-shadow 0.5s ease-in-out, border-color 0.5s ease-in-out;
+}
+.boton-amarillo:hover {
+    background-color: #FFFF00;
+    color: #000;
+    box-shadow: 0 0 4px #FFFF00,
+                0 0 17px rgb(255 255 0 / 0.8),
+                0 0 30px rgb(255 255 0 / 0.7),
+                0 0 40px rgb(255 255 0 / 0.1);
+    border-color: rgb(254, 255, 218);
+}
